@@ -93,6 +93,14 @@ export default function Home() {
 
           <Socials className="mt-2 laptop:mt-5" />
         </div>
+
+        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
+          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
+          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
+            {data.aboutpara}
+          </p>
+        </div>
+
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-2xl text-bold">Work.</h1>
 
@@ -121,12 +129,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
-        </div>
+
         <Footer />
       </div>
     </div>
