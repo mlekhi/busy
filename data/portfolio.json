@@ -1,12 +1,15 @@
 {
-    "name":"Business Stuff",
-    "headerTaglineOne":"Welcome to BusinessStuff 👋",
-    "headerTaglineTwo":"We help POC students",
-    "headerTaglineThree":"interested in business soar.",
+    "name":"Comet Connects",
+    "headerTaglineOne":"Welcome to Comet 👋",
+    "headerTaglineTwo":"A platform dedicated to",
+    "headerTaglineThree":"supporting POC in business.",
     "headerTaglineFour":"Explore our resources.",
     "showCursor":true,"showBlog":true,
     "darkMode":true,"showResume":true,
-    "socials":[{"id":"1","title":"Github","link":"https://github.com/chetanverma16"},{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/chetanverma7/"},{"id":"3","title":"Twitter","link":"https://twitter.com/realchetanverma"},{"id":"4","title":"Blog","link":"https://blog.chetanverma.com/"},{"id":"5","title":"Email","link":"mailto:hello@chetanverma.com"}],
+    "socials":[{"id":"1","title":"Instagram","link":"https://github.com/chetanverma16"},{"id":"2","title":"Email","link":"mailto:hello@chetanverma.com"}],
+    "aboutpara1":"Hi there! Welcome to the passion project of 2 brown girls in business :)",
+    "aboutpara2":"Throughout our careers, we often felt underestimated by our peers. Whether or not they recognized that they held internal bias, we were always aware. Additionally, EDI programs were always difficult to find and not very accessible.",
+    "aboutpara3":"Thus, we created Comet, a fun and easy website to support and empower the next generation of business leaders!",
     "projects":[
         {
             "id":"1",
@@ -30,16 +33,6 @@
             "title":"Project Four",
             "description":"Marketing",
             "imageSrc":"https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url":"http://chetanverma.com/"},
-            {"id":"5","title":"Project Five",
-            "description":"Development",
-            "imageSrc":"https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url":"http://chetanverma.com/"},
-        {
-            "id":"6",
-            "title":"Project Six",
-            "description":"Design & Development",
-            "imageSrc":"https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
             "url":"http://chetanverma.com/"}],
     "services":[
         {"id":"1",
@@ -48,7 +41,6 @@
         {"id":"2","title":"Branding","description":"We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."},
         {"id":"3","title":"Web Design","description":"We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."},
         {"id":"4","title":"3D Design","description":"We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."}],
-    "aboutpara":"Being in business is hard. Everyone loves to gaslight gatekeep girlboss and it sucks. We wanna help business kiddos with advice from big consulting and finance firms and shit. Go Jasmine and Maya woo",
     "resume":{
         "tagline":"👋  I'm a software engineer, product designer.",
         "description":"I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",

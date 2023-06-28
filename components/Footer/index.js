@@ -10,10 +10,7 @@ const Footer = ({}) => {
         <div>
           <div className="mt-10">
             <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              BUSINESS SLAY
-            </h1>
-            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              GO TEAM
+              Let’s Connect!
             </h1>
             <div className="mt-10">
               <Socials />
@@ -23,7 +20,7 @@ const Footer = ({}) => {
       </div>
       <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0">
         <Link href="http://localhost:3000">
-          <a className="underline underline-offset-1">Business Stuff.</a>
+          <a className="underline underline-offset-1">Comet Connects</a>
         </Link>
       </h1>
     </>
