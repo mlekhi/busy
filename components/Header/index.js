@@ -134,18 +134,18 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             <Button onClick={handleAboutScroll}>About</Button>
             <Button onClick={handleWorkScroll}>Stories</Button>
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Resources</Button>
+              <Button onClick={() => router.push("/blog")}>How-To's</Button>
             )}
             {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
-                How-To's
+                Resources
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("mailto:mlekhi@uwo.ca")}>
               Contact
             </Button>
             {mounted && theme && data.darkMode && (
@@ -163,14 +163,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           <div className="flex">
             <Button onClick={() => router.push("/")}>Home</Button>
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
+              <Button onClick={() => router.push("/blog")}>How-To's</Button>
             )}
             {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
-                Resume
+                Resources
               </Button>
             )}
 
