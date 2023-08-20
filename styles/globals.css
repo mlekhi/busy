@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply dark:bg-black dark:text-white;
+  background-color: #E79171;
 }
 
 .gradient-circle {
@@ -19,11 +19,11 @@ body {
   top: -30px;
   height: 40px;
   width: 100vw;
-  opacity: 0.5;
+  opacity: 0.8;
   filter: blur(40px);
   background: radial-gradient(
     circle,
-    rgba(226, 149, 120, 0.8) 0%,
+    rgba(250, 249, 246) 0%,
     rgba(255, 255, 255, 1) 100%
   );
 }
@@ -34,12 +34,12 @@ body {
   bottom: -20px;
   height: 30px;
   width: 100vw;
-  opacity: 0.5;
+  opacity: 1;
   filter: blur(40px);
   background: radial-gradient(
     circle,
-    rgba(226, 149, 120, 0.8) 0%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(250, 249, 246) 0%,
+    rgba(255, 255, 255, 1) 100%,
   );
 }
 

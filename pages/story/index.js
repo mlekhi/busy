@@ -9,7 +9,7 @@ import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
 import { ISOToDate, useIsomorphicLayoutEffect } from "../../utils";
 import { getAllPosts } from "../../utils/api";
-const Blog = ({ posts }) => {
+const Story = ({ posts }) => {
   const showBlog = useRef(data.showBlog);
   const text = useRef();
   const router = useRouter();
@@ -34,7 +34,7 @@ const Blog = ({ posts }) => {
       <>
         {data.showCursor && <Cursor />}
         <Head>
-          <title>How-To's</title>
+          <title>Stories</title>
         </Head>
         <div
           className={`container mx-auto mb-10 ${
@@ -47,32 +47,10 @@ const Blog = ({ posts }) => {
               ref={text}
               className="mx-auto mob:p-2 text-bold text-6xl laptop:text-8xl w-full"
             >
-              A Guide To...
+              Coming soon...
             </h1>
-            <div className="mt-10 grid grid-cols-1 mob:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 justify-between gap-10">
-              {posts &&
-                posts.map((post) => (
-                  <div
-                    className="cursor-pointer relative"
-                    key={post.slug}
-                    onClick={() => Router.push(`/blog/${post.slug}`)}
-                  >
-                    <img
-                      className="w-full h-60 rounded-lg shadow-lg object-cover"
-                      src={post.image}
-                      alt={post.title}
-                    ></img>
-                    <h2 className="mt-5 text-4xl">{post.title}</h2>
-                    <p className="mt-2 opacity-50 text-lg">{post.preview}</p>
-                    <span className="text-sm mt-5 opacity-25">
-                      {ISOToDate(post.date)}
-                    </span>
-                    {process.env.NODE_ENV === "development" && mounted}
-                  </div>
-                ))}
-            </div>
-            <Footer />
           </div>
+          <Footer />
         </div>
       </>
     )
@@ -96,4 +74,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Blog;
+export default Story;

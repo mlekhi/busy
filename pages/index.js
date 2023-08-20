@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import Header from "../components/Header";
-import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
@@ -93,32 +92,50 @@ export default function Home() {
 
         </div>
 
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara1}
-          </p>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara2}
-          </p>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara3}
-          </p>
+        <div className="pt-4">
+          <h1 className="tablet:m-10 text-3xl text-bold">About.</h1>
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Stories</h1>
+        <div className="flex flex-row">
+          <div className="w-2/3 laptop:p-2 m-0" ref={aboutRef}>
+            <p className="tablet:ml-10 mr-10 mb-10 text-xl laptop:text-2xl w-full laptop:w-3/5">
+              {data.aboutpara1}
+            </p>
+            <p className="tablet:m-10 mt-2 text-xl laptop:text-2xl w-full laptop:w-3/5">
+              {data.aboutpara2}
+            </p>
+            <p className="tablet:ml-10 mr-10 mb-10 text-xl laptop:text-2xl w-full laptop:w-3/5">
+              {data.aboutpara3}
+            </p>
+          </div>
+          <div className="w-1/3">
+            <img className="object-cover" src="doggo.jpg"/>
+            <div className="mt-6">
+              <p className="text-center text-l laptop:text-xl w-full">
+                {data.dogpara}
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0 text-center" ref={workRef}>
+            <h1 className="text-2xl text-bold">{data.aboutpara4}</h1>
+        </div>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {data.projects.map((project) => (
-              <WorkCard
-                key={project.id}
-                img={project.imageSrc}
-                name={project.title}
-                description={project.description}
-                onClick={() => window.open(project.url)}
-              />
-            ))}
+        <div className="mt-20 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
+          <h1 className="text-3xl text-bold">Stories.</h1>
+
+          <div className="flex-none overflow-x-auto">
+            <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+              {data.projects.map((project) => (
+                <WorkCard
+                  key={project.id}
+                  img={project.imageSrc}
+                  name={project.title}
+                  description={project.description}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
