@@ -104,7 +104,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button onClick={() => router.push("/story")}>Stories</Button>
             )}
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>How-To's</Button>
+              <Button onClick={() => router.push("/blog")}>How-To&apos;s</Button>
             )}
             {showResume && (
               <Button
@@ -124,7 +124,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button onClick={() => router.push("/story")}>Stories</Button>
             )}
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>How-To's</Button>
+              <Button onClick={() => router.push("/blog")}>How-To&apos;s</Button>
             )}
             {showResume && (
               <Button

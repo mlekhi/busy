@@ -58,14 +58,6 @@ const BlogPost = ({ post }) => {
         <Footer />
       </div>
       {process.env.NODE_ENV === "development"}
-
-      {showEditor && (
-        <BlogEditor
-          post={post}
-          close={() => setShowEditor(false)}
-          refresh={() => router.reload(window.location.pathname)}
-        />
-      )}
     </>
   );
 };
