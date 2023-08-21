@@ -34,7 +34,7 @@ const Blog = ({ posts }) => {
       <>
         {data.showCursor && <Cursor />}
         <Head>
-          <title>How-To's</title>
+          <title>How-To&apos;s</title>
         </Head>
         <div
           className={`container mx-auto mb-10 ${
